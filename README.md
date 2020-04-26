@@ -98,3 +98,9 @@ or specify IP and port that differ from default
 #### Open user interface
 
 Open in browser [http://127.0.0.1:5000/](http://127.0.0.1:5000/) to access real-time face recognition
+
+#### (Optional) Add your data 
+You can add more classes to the recognizer. Create a folder with 
+the name of a class and add photos to it. 
+Then open in browser [http://127.0.0.1:5000/retrain](http://127.0.0.1:5000/retrain)
+to retrain the system
