@@ -60,6 +60,7 @@ Database scheme:
     * person_id
     * timestamp_first 
     * timestamp_last
+    
 ## How to run
 #### Prerequisites
 * [Python](https://www.python.org/downloads/)  3.6 and higher
@@ -70,7 +71,7 @@ Database scheme:
 * Clone repository
 
 ```bash
-   git clone https://github.com/Alexeyzhu/.git
+   git clone https://github.com/Alexeyzhu/face-detection.git
 ```
 
 * Install **requirements.txt**
