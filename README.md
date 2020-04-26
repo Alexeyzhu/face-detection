@@ -9,7 +9,7 @@ and then finally recognizes faces on video streams from web camera with OpenCV
 
 ## About
 #### Dataset
-The dataset that used to train system contains three people:
+The dataset that is used to train system contains three people:
 * **Arnold Schwarzenegger**
 * **George W. Bush**
 * **Unknown**, which is used to represent faces of 
