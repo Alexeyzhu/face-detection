@@ -29,12 +29,13 @@ produces the 128-D facial embeddings
 
 
 #### Pipeline
+Face recognition pipeline:
 
-* **OpenCV Caffe-based face detector** to apply face detection, which detects the presence and 
+* **Pre-trained OpenCV Caffe-based face detector** to apply face detection, which detects the presence and 
 location of a face in an image, but does not identify it. 
 It is quite simple to use and efficient
 
-* **Deep learning PyTorch-based model from [OpenFace project](https://cmusatyalab.github.io/openface/)** to extract the 128-d feature vectors (embeddings) 
+* **Pre-trained DL PyTorch-based model from [OpenFace project](https://cmusatyalab.github.io/openface/)** to extract the 128-d feature vectors (embeddings) 
 that quantify each face in an image. 
 It is implementation of [FaceNet: A Unified Embedding for Face Recognition and Clustering](https://www.cv-foundation.org/openaccess/content_cvpr_2015/app/1A_089.pdf)
 Main   benefit   is   representational   efficiency:   can   achieve state-of-the-art  performance  
@@ -42,10 +43,12 @@ Main   benefit   is   representational   efficiency:   can   achieve state-of-th
 
 * **Scikit-learn SVM model** to actually recognize a person trained on embeddings.
 It has good performance and simple to train
-
+##### Example of work
+![]()
 #### Database structure
 In order to store information about persons and embeddings of faces 
-a simple and easy **Sqlite** was chosen
+a simple and easy **Sqlite** was chosen and SqlAlchemy library
+for simplification of work with database
 
 Database scheme:
 
