@@ -95,3 +95,6 @@ or specify IP and port that differ from default
    python webstreaming.py --ip "desired ip" --port port_number
 ```
 
+#### Open user interface
+
+Open in browser [http://127.0.0.1:5000/](http://127.0.0.1:5000/) to access real-time face recognition
