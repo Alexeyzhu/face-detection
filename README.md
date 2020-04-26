@@ -44,7 +44,7 @@ Main   benefit   is   representational   efficiency:   can   achieve state-of-th
 * **Scikit-learn SVM model** to actually recognize a person trained on embeddings.
 It has good performance and simple to train
 ##### Example of work
-![]()
+![](https://raw.githubusercontent.com/Alexeyzhu/face-detection/master/example.png)
 #### Database structure
 In order to store information about persons and embeddings of faces 
 a simple and easy **Sqlite** was chosen and SqlAlchemy library
