@@ -20,12 +20,12 @@ Each class contains a total of 40 images.
 #### Project structure
 Project has four directories in the root folder:
 
-* *dataset* contains face images organized into subfolders by name
-* *facerecognizer* contains files for training, detecting and recognizing faces
-* *pretrained_models* contains a pre-trained Caffe deep learning model 
+* **dataset** contains face images organized into subfolders by name
+* **facerecognizer** contains files for training, detecting and recognizing faces
+* **pretrained_models** contains a pre-trained Caffe deep learning model 
 provided by OpenCV to detect faces and a Torch deep learning model which 
 produces the 128-D facial embeddings
-* *templates* contains html templates for Flask
+* **templates** contains html templates for Flask
 
 
 #### Pipeline
@@ -47,7 +47,7 @@ It has good performance and simple to train
 ![](https://raw.githubusercontent.com/Alexeyzhu/face-detection/master/example.png)
 #### Database structure
 In order to store information about persons and embeddings of faces 
-a simple and easy **Sqlite** was chosen and SqlAlchemy library
+a simple and easy **Sqlite** was chosen and **SqlAlchemy** library
 for simplification of work with database
 
 Database scheme:
