@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title>Face recognition</title>
+</head>
+<style>
+    p {
+        color: black;
+        font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+        font-size: 25px;
+        margin: 0;
+    }
+
+    body {
+        text-align: center;
+        padding: 40px 0;
+        background: white;
+        margin: 25px;
+    }
+
+    img {
+        border-radius: 8px;
+    }
+
+    div.polaroid {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        width: 40%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+    }
+
+    div.container {
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: forestgreen;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        background: white;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+    }
+
+</style>
+<body>
+<div class="polaroid">
+    <img src="{{ url_for('video_feed') }}" alt="faces" class="img" style="width:100%">
+    <div class="container">
+        <p>Your camera</p>
+    </div>
+</div>
+
+<div class="card">
+    <a href="/table" class="button" style="vertical-align:middle"><span>Presence table</span></a>
+</div>
+</body>
+</html>
